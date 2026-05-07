@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Cat paradise</h1>
+    <h1>Welcome to the crazy worlds of my cats!</h1>
+    <h2>Cat paradise</h2>
   </div>
 </template>
 

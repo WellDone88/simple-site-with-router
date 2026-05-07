@@ -4,12 +4,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-    <h1>Welcome to the crazy worlds of my cats!</h1>
     <div>
-      <nav>
-        <RouterLink to="/">Home</RouterLink><br />
-        <RouterLink to="/cats">My cats</RouterLink>
-      </nav>
+      <nav><RouterLink to="/">Home</RouterLink> | <RouterLink to="/cats">My cats</RouterLink></nav>
     </div>
   </header>
 
