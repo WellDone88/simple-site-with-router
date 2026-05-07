@@ -7,15 +7,13 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView,
+      component: HomeView, // Lastes med en gang
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
+      path: '/cats',
+      name: 'cats',
+      // LAZY LOADING: Vi slettet importen på linje 3 og bruker kun denne:
+      component: () => import('../views/ShowView.vue'),
     },
   ],
 })
