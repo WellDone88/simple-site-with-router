@@ -12,4 +12,12 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 </template>
 
-<style scoped></style>
+<style>
+/* Legg merke til at det IKKE står 'scoped' her */
+body {
+  background-color: #aca7a7; /* For eksempel en mørk modus */
+  color: rgb(85, 69, 69);
+  margin: 0;
+  font-family: sans-serif;
+}
+</style>
