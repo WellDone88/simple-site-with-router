@@ -25,6 +25,7 @@ const MineKatter = [
     <h2>Maximus & Obelix</h2>
     <div class="gallery">
       <CatCard v-for="katt in MineKatter" :key="katt.id" :id="katt.id" :imageUrl="katt.bilde" />
+      <button @click="$router.push('/')">Gå tilbake til forsiden</button>
     </div>
   </div>
 </template>

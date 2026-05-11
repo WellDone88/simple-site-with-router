@@ -15,6 +15,11 @@ const router = createRouter({
       // LAZY LOADING: Vi slettet importen på linje 3 og bruker kun denne:
       component: () => import('../views/ShowView.vue'),
     },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'error',
+      component: () => import('../views/ErrorPageView.vue'),
+    },
   ],
 })
 

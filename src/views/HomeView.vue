@@ -2,6 +2,7 @@
   <div class="home-container">
     <h1>Welcome to the crazy worlds of my cats!</h1>
     <h2>Cat paradise</h2>
+    <button @click="$router.push('/cats')">Se kattene mine</button>
   </div>
 </template>
 
@@ -9,9 +10,9 @@
 .home-container {
   /* Dette gjør at beholderen tar hele høyden som er tilgjengelig */
   display: flex;
-  flex-direction: column; /* Legger elementene under hverandre */
-  align-items: center; /* Sentrerer horisontalt */
-  justify-content: center; /* Sentrerer vertikalt */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   text-align: center; /* Passer på at teksten inni også er midtstilt */
   min-height: 70vh; /* Gir litt pusterom fra toppen av siden */
@@ -25,7 +26,7 @@ h1 {
 
 p {
   font-size: 1.2rem;
-  max-width: 600px; /* Gjør at teksten ikke blir for bred på PC */
+  max-width: 600px;
   line-height: 1.6;
 }
 </style>
